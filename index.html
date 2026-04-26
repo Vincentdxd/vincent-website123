@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        
+        <style>
+            body{
+background-color: #cfefff;
+}
+            .row{
+                width:720px;
+                margin: 20px auto 20px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+            .hover-effect{
+transition: transform 0.3s ease;
+}
+
+.hover-effect{
+transition: transform 0.4s ease;
+}
+
+.hover-effect:hover{
+animation: shakeFlip 2s infinite;
+}
+
+@keyframes shakeFlip{
+
+0%{
+transform: scale(1.15) rotateY(0deg) rotate(0deg);
+}
+
+15%{
+transform: scale(1.15) rotate(3deg);
+}
+
+30%{
+transform: scale(1.15) rotate(-3deg);
+}
+
+50%{
+transform: scale(1.2) rotateY(180deg) rotate(2deg);
+}
+
+70%{
+transform: scale(1.15) rotate(-3deg);
+}
+
+85%{
+transform: scale(1.15) rotate(3deg);
+}
+
+100%{
+transform: scale(1.15) rotateY(360deg) rotate(0deg);
+}
+
+}
+
+        </style>
+    </head>
+
+    <body> 
+        <div class="row">
+            <div class="image-container"><img id="img1" src="img/bush .png" class="hover-effect"
+width="200"/> </div>
+            <div class="image-container"><img id="img2" src="img/Cooking.png" height="200" width="200"class="hover-effect"
+width="200"/></div>
+            <div class="image-container"><img id="img3" src="img/Diner.png" height="200" width="200"class="hover-effect"
+width="200"/></div>
+        </div>
+        
+
+        <div class="row">
+            <div class="image-container"><img id="img4" src="img/dog.png" height="" width="200"class="hover-effect"
+width="200"/></div>
+            <div class="image-container"><img id="img5" src="img/gaming.png" height="" width="200"class="hover-effect"
+width="200"/></div>
+            <div class="image-container"><img id="img6" src="img/morning.png" height="" width="200"class="hover-effect"
+width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img7" src="img/sink.png" height="" width="200"class="hover-effect"
+width="200"/></div>
+            <div class="image-container"><img id="img8" src="img/spatula.png" height="" width="200"class="hover-effect"
+width="200"/></div>
+            <div class="image-container"><img id="img9" src="img/bed.png" height="" width="200"class="hover-effect"
+width="200"/></div>
+            
+        </div>
+        
+        <script>
+            var sound1 = new buzz.sound("sound/Bush.mp3");
+            var sound2 = new buzz.sound("sound/cooking.wav");
+            var sound3 = new buzz.sound("sound/diner.wav");
+            var sound4 = new buzz.sound("sound/dog.wav");
+            var sound5 = new buzz.sound("sound/gaming.wav");
+            var sound6 = new buzz.sound("sound/morning.wav");
+            var sound7 = new buzz.sound("sound/sink.wav");
+            var sound8 = new buzz.sound("sound/spatula.wav");
+            var sound9 = new buzz.sound("sound/bed.wav");
+     
+            window.onload = function() {
+                document.getElementById('img1').addEventListener('click', function () {sound1.play(); });  
+                document.getElementById('img2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('img3').addEventListener('click', function () {sound3.play(); });
+                document.getElementById('img4').addEventListener('click', function () {sound4.play(); });
+                document.getElementById('img5').addEventListener('click', function () {sound5.play(); }); 
+                document.getElementById('img6').addEventListener('click', function () {sound6.play(); }); 
+                document.getElementById('img7').addEventListener('click', function () {sound7.play(); }); 
+                document.getElementById('img8').addEventListener('click', function () {sound8.play(); }); 
+                document.getElementById('img9').addEventListener('click', function () {sound9.play(); });
+            }  
+        </script>   
+        
+    </body>
+    
+</html>
